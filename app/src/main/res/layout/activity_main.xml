@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tower_logo"
+            android:layout_weight="9"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startBtn"
+            android:textSize="40dp"
+            android:id="@+id/start_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/imageView"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/nameValue"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/player_name"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/nameValue"
+                android:id="@+id/moneyValue"
+                android:layout_marginBottom="40dp"
+                android:text=" (money) "
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FCCC"
+            android:gravity="center"
+            android:layout_above="@+id/bottom_navigation"
+            android:orientation="horizontal"
+            android:id="@+id/ad_view"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#B3ABAB"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="-1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/homeBtn"
+                android:textSize="10dp"
+                android:id="@+id/to_home" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/upgradesBtn"
+                android:textSize="10dp"
+                android:id="@+id/to_upgrades" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/leadersBtn"
+                android:textSize="10dp"
+                android:id="@+id/to_leaderboard" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settingsBtn"
+                android:textSize="10dp"
+                android:id="@+id/to_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

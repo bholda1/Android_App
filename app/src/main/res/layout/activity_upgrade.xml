@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upgrades_header"
+            android:id="@+id/upgrade_header"
+            android:textSize="45sp"
+            android:layout_marginBottom="100dp" />
+
+        <!-- Player Cash -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cash"
+                android:text="@string/cash"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player_cash"
+                android:textSize="24sp"
+                android:id="@+id/cash_amount" />
+        </LinearLayout>
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <!-- Tower Health -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/upgrade_tower_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/tower_health"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/curr_tower_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="5"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/upgrade_button_tower_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Defense Health -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/upgrade_defence_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/defence_health"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/curr_defence_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_marginRight="30dp"
+                    android:text="1"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/upgrade_button_defence_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <!-- Enemy Speed -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/upgrade_enemies_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/enemy_speed"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/curr_enemy_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="0.05"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:id="@+id/upgrade_button_enemy_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Buttons for home, upgrades, settings, leaderboard, and settings -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#B3ABAB"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/homeBtn"
+            android:textSize="10dp"
+            android:id="@+id/to_home" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/upgradesBtn"
+            android:textSize="10dp"
+            android:id="@+id/to_upgrades" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/leadersBtn"
+            android:textSize="10dp"
+            android:id="@+id/to_leaderboard" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settingsBtn"
+            android:textSize="10dp"
+            android:id="@+id/to_settings" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+

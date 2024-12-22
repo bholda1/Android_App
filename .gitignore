@@ -1,0 +1,43 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration files
+local.properties
+
+# Android Studio and IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Android Studio cache
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build directories
+app/build/
+*/build/
+
+# Miscellaneous
+*.apk
+*.ap_
+*.dex
+*.class
+
+# FireBase
+google-services.json
+firebase-debug.log

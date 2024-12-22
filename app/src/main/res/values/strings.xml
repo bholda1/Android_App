@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GroupProject</string>
+    <string name="startBtn">Start</string>
+    <string name="homeBtn">Home</string>
+    <string name="upgradesBtn">Upgrades</string>
+    <string name="leadersBtn">Leaders</string>
+    <string name="settingsBtn">Settings</string>
+    <string name="upgrades_header">Upgrades</string>
+    <string name="cash">Cash:</string>
+    <string name="player_cash">__________</string>
+
+    <string name="tower_health">Tower Health</string>
+    <string name="defence_health">Defence Health</string>
+    <string name="enemy_speed">Enemy Speed</string>
+
+    <string name="in_game_money">$:</string>
+    <string name="sample_amount">Sample amount</string>
+    <string name="end_game">End game</string>
+    <string name="settings_header">Settings</string>
+    <string name="music">Music</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="player_name">Player Name:</string>
+    <string name="enter_name_here">Enter Name Here</string>
+    <string name="reset_game_stats">Reset Game Stats</string>
+    <string name="change_language">Change Language</string>
+    <string name="leader_board">Leader Board</string>
+    <string name="save_name">save name</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+</resources>
