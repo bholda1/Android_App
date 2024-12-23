@@ -1,9 +1,5 @@
 # **Tower Defense Android App**
-- This is a tower defense game created in Android Studio
----
-
-## **Overview**
-This project is a fully functional Tower Defense Android application designed to showcase:
+This project is a fully functional Tower Defense game made in Android Studio designed to showcase:
 - Backend integration using Firebase.
 - Ads integration using Google test ads.
 - A polished user interface (UI) and user experience (UX).
@@ -26,7 +22,6 @@ This project uses Firebase for its backend services, such as analytics and leade
 2. Create a Firebase project and add an Android app with your app’s package name.
 3. Download the `google-services.json` file from the Firebase Console.
 4. Place the `google-services.json` file in the `/app` directory of this project.
-
 ---
 
 ### Google ads
@@ -44,7 +39,6 @@ To enable Google Ads, you need to ensure that **Google Play Services** is instal
    - If not installed, check the box next to it, click **Apply**, and then **OK**.
    - Google Play Services will download and install.
 4. Verify that Google Play Services now shows as "Installed."
-
 ---
 
 ### Additional info
