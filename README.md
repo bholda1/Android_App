@@ -9,6 +9,8 @@ This project is a fully functional Tower Defense Android application designed to
 - A polished user interface (UI) and user experience (UX).
 ---
 
+![App Demo](assets/Demo.gif)
+---
 
 ## **Relevant Code**
 Here are the main areas of the project:
