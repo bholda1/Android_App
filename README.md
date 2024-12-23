@@ -24,7 +24,7 @@ This project uses Firebase for its backend services, such as analytics and leade
 4. Place the `google-services.json` file in the `/app` directory of this project.
 ---
 
-### **Google ads**
+## **Google ads**
 - This project uses Google test ads which are fake
 - Google Play services needs to be installed
 - [Google test ads](https://developers.google.com/admob/android/test-ads)
@@ -41,7 +41,7 @@ To enable Google Ads, you need to ensure that **Google Play Services** is instal
 4. Verify that Google Play Services now shows as "Installed."
 ---
 
-### Additional info
+## **Additional info**
 In Build.gradle you will need to add the dependencies for Firebase and Google Play Services
 ```Kotlin
 dependencies {
