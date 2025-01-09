@@ -2,6 +2,8 @@
 This project is a fully functional Tower Defense game made in Android Studio designed to showcase:
 - Backend integration using Firebase.
 - Ads integration using Google test ads.
+- Various GUI components such as status bars, dropdowns, and buttons.
+- Animation of drawn elements ("enemies").
 ---
 
 ![App Demo](assets/Demo.gif)
