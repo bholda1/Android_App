@@ -26,7 +26,7 @@ This project uses Firebase for its backend services, such as analytics and leade
 ---
 
 ## **Google ads**
-- This project uses Google test ads which are fake
+- This project uses fake Google test ads
 - Google Play services needs to be installed
 - [Google test ads](https://developers.google.com/admob/android/test-ads)
 - This app uses Fixed Size banner Ads, Unit ID can be found [here](https://developers.google.com/admob/android/banner/fixed-size)
