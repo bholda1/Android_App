@@ -4,6 +4,7 @@ This project is a fully functional Tower Defense game made in Android Studio des
 - Ads integration using Google test ads.
 - Various GUI components such as status bars, dropdowns, and buttons.
 - Animation of drawn elements ("enemies").
+- Firebase ML Kit for translation to make app multilingual. 
 ---
 
 ![App Demo](assets/Demo.gif)
